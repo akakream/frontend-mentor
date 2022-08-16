@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="../dist/output.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body class="font-spacegrotesk">
+  <div class="grid grid-cols-1 md:grid-cols-3 h-screen w-screen">
+    <div class="h-full col-span-1 flex flex-col justify-center items-center" style="background-image: url(../images/bg-main-desktop.png); background-repeat: no-repeat; background-size: cover;">
+      <div class="max-w-sm w-full max-h-48 h-full relative bottom-10 ml-72 p-4 flex flex-col justify-between" style="background-image: url(../images/bg-card-front.png); background-repeat: no-repeat; background-size: 100% 100%;">
+        <img class="self-start h-10" src="../images/card-logo.svg">
+        </img>
+        <div class="flex flex-col">
+          <p class="self-center text-gray-300 relative bottom-3">
+            0000 0000 0000
+          </p>
+          <div class="flex justify-between">
+            <p class="text-gray-300">
+              JANE APPLESEED
+            </p>
+            <p class="text-gray-300">
+              00/00
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-sm w-full max-h-48 h-full relative ml-96 flex justify-center items-center" style="background-image: url(../images/bg-card-back.png); background-repeat: no-repeat; background-size: 100% 100%;">
+        <p class="text-gray-300">0000</p>
+      </div>
+    </div>
+    <div class="flex h-full col-span-1 md:col-span-2 items-center justify-center ml-32">
+      <div class="max-w-md w-full flex flex-col">
+        <form class="flex flex-col mb-4">
+          <p class="text-gray-700">CARDHOLDER NAME</p>
+          <input class="p-2 h-10 text-gray-300 border-2 rounded-lg" type="text" value="e.g. John Doe">
+        </form>
+        <form class="flex flex-col mb-4">
+          <p class="text-gray-700">CARD NUMBER</p>
+          <input class="p-2 h-10 text-gray-300 border-2 rounded-lg" type="text" value="e.g. 1234 5678 9123 0000">
+        </form>
+        <div class="flex mb-4 justify-between">
+          <form class="flex flex-col">
+            <p class="text-gray-700">EXP. DATE (MM/YY)</p>
+            <div class="flex">
+              <input class="p-2 h-10 w-24 mr-2 text-gray-300 border-2 rounded-lg" type="text" value="MM">
+              <input class="p-2 h-10 w-24 text-gray-300 border-2 rounded-lg" type="text" value="YY">
+            </div>
+          </form>
+          <form class="flex flex-col">
+            <p class="text-gray-700">CVC</p>
+            <input class="p-2 h-10 text-gray-300 border-2 rounded-lg" type="text" value="e.g. 123">
+          </form>
+        </div>
+        <button type="submit" class="text-white h-12 rounded-lg bg-purple-900 hover:bg-purple-800">
+          Confirm
+        </button>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
